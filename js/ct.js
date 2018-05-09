@@ -71,7 +71,7 @@ var FooterMenu = function(item) {
     var defaults = {
         data: [],
         activeClass: "ct-menu-active",
-        div: $("<div></div>"),
+        div: $("body"),
         stopLink: true,
         layerMaxHeight: 60,
         isMenuDropdown: false,
@@ -304,7 +304,7 @@ var FooterMenu = function(item) {
 var Load = function(item) {
     var me = this;
     var defaults = {
-        div: $("<div></div>"),
+        div: $("body"),
         word: "正在加载中...",
         isBefore: false,
         className: ""
@@ -375,7 +375,7 @@ var Load = function(item) {
 var Textarea = function(item) {
     var me = this;
     var defaults = {
-        div: $("<div></div>"),
+        div: $("body"),
         minRow: 2,
         maxRow: 6,
         className: "",

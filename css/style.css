@@ -110,8 +110,11 @@ ol {
 a {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 abbr[title],
 acronym[title] {
