@@ -12,8 +12,7 @@ th, td { /* table elements 表格元素 */
 /* 设置默认字体 */
 body,
 button, input, select, textarea { /* for ie */
-    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
-    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    font: @fontSizeDefault @fontFamily; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
     -webkit-appearance: none;/*ios 的的阴影*/
 }
 
@@ -27,7 +26,9 @@ code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 
 small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
 
 /* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
-html { overflow-y: auto; }
+html { overflow-y: auto; 
+  font-size: 62.5%;
+}
 body{
     overflow-y: auto;
 }
